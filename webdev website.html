@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A self-analysis website that helps users understand themselves better through personal insights.">
+    <meta name="author" content="Your Name">
+
+    <title>SelfInsight | Understand Yourself Better</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="logo">SelfInsight</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#analysis">Self Analysis</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <h1>Understand Yourself Better</h1>
+        <p>Gain clarity about your personality, emotions, strengths, and personal growth.</p>
+        <a href="#analysis" class="btn">Start Self Analysis</a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <h2>About SelfInsight</h2>
+        <p>
+            SelfInsight is a personal reflection tool designed to help individuals
+            gain awareness about their emotions, strengths, weaknesses, and goals.
+            Self-awareness is the foundation of personal growth.
+        </p>
+    </section>
+
+    <!-- ===== ANALYSIS FORM ===== -->
+    <section id="analysis">
+        <h2>Personal Self Analysis</h2>
+
+        <form id="analysisForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" min="10" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mood">Current Mood</label>
+                <select id="mood" required>
+                    <option value="">Select your mood</option>
+                    <option value="happy">Happy</option>
+                    <option value="stressed">Stressed</option>
+                    <option value="sad">Sad</option>
+                    <option value="motivated">Motivated</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="strength">Main Strength</label>
+                <textarea id="strength" placeholder="What are you good at?" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="weakness">Area to Improve</label>
+                <textarea id="weakness" placeholder="What do you want to improve?" required></textarea>
+            </div>
+
+            <button type="button" onclick="analyze()">Analyze Me</button>
+        </form>
+
+        <!-- Results Area -->
+        <div id="result" aria-live="polite"></div>
+    </section>
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section id="benefits">
+        <h2>Why Use SelfInsight?</h2>
+
+        <ul>
+            <li>✔ Improves self-awareness</li>
+            <li>✔ Helps identify strengths and weaknesses</li>
+            <li>✔ Encourages emotional reflection</li>
+            <li>✔ Supports personal growth</li>
+        </ul>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have feedback or suggestions? Reach out to us.</p>
+        <p>Email: support@selfinsight.com</p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 SelfInsight. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
